@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg position-fixed end-0 start-0">
   <div className="container-fluid">
   <a href='#Home' className='text-white p-0 ziad1 fw-bold ms-4'>Z I A D</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon "></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">

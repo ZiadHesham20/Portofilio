@@ -11,6 +11,20 @@ import { useEffect } from 'react';
 
 export default function Home() {
   
+
+  const handleDownload = () => {
+    const url = 'https://drive.google.com/file/d/1uN5S6jXmVMp2Z9GJYtDFA4nZCusBah-k/view?usp=drive_link'; // replace with your file URL
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'ZIAD-CV.pdf'); // replace with your file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
+
+
   const myNumber = '01126553297'
   
   const whoIam = useRef(null);
@@ -87,10 +101,9 @@ export default function Home() {
 
             /></h2>
             <div className='d-flex justify-content-center'>
-              <a href="./ZIAD-CV.pdf" download>
-                <button className='btn btn-outline-secondary  rounded-5 d-flex justify-content-center align-items-center'>Download CV</button>
-              </a>
-            </div>
+            
+             <button className='btn btn-outline-secondary  rounded-5 d-flex justify-content-center align-items-center' onClick={handleDownload}>Preview CV</button>
+             </div>
           </div>
         </div>
       </div>
@@ -105,7 +118,7 @@ export default function Home() {
       <div ref={whoIam} className="row flex-row-reverse">
         <div className='col-lg-6'>
           <div>
-            <img src="./undraw_hello_re_3evm 1.svg" className='w-100' alt="" />
+            <img src="./undraw_hello_re_3evm 1.svg" className='w-100' alt="greeting" />
           </div>
         </div>
         <div   className='col-lg-6 d-flex align-items-center'>
